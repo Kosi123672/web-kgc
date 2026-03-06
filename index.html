@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas KOALISI GLOBAL CENTRAL + game Zone</title>
+    
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body data-theme="light">
+    <!-- Particles Container -->
+    <div id="particles-container"></div>
+
+    <div class="container">
+        <!-- Theme Switch -->
+        <div class="theme-switch-wrapper">
+            <div class="theme-switch" id="theme-toggle">
+                <span class="active" data-theme="light">☀️ Light</span>
+                <span data-theme="dark">🌙 Dark</span>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="wa-icon">💬</div>
+                <h1>KOALISI GLOBAL CENTRAL</h1>
+                <p>Ruang diskusi modern + zona game seru! Dari IT, Astronomi, sampai hangout dan main game bareng.</p>
+                <a href="https://kgc-registration.vercel.app/" class="btn-join" target="_blank">
+                    <i>📱</i> daftar kgc-registration
+                </a>
+            </div>
+        </header>
+
+        <!-- Topic Pills -->
+        <div class="topics">
+            <span class="topic-pill"><i>💻</i> #Ethical_Hacking</span>
+            <span class="topic-pill"><i>🔒</i> #Cyber_Security</span>
+            <span class="topic-pill"><i>📡</i> #ITK</span>
+            <span class="topic-pill"><i>🍿</i> #hangout_lange</span>
+            <span class="topic-pill"><i>🌌</i> #Astronomi</span>
+            <span class="topic-pill"><i>🤖</i> #AI_Diskusi</span>
+            <span class="topic-pill"><i>🎮</i> #GameZone</span>
+        </div>
+
+        <!-- Features Cards -->
+        <section class="features">
+            <div class="card">
+                <div class="card-icon">🛡️</div>
+                <h3>Ethical Hacking</h3>
+                <p>Belajar penetration testing & vulnerability assessment dari praktisi keamanan.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔐</div>
+                <h3>Cyber Security</h3>
+                <p>Diskusi firewall, IDS/IPS, VPN, dan keamanan jaringan enterprise.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">💬</div>
+                <h3>Diskusi & Argumentasi</h3>
+                <p>Debat sehat, tukar pikiran, selesaikan argumentasi dengan logika.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h3>ITK (Teknologi)</h3>
+                <p>Mendalami front-end, database, backend, dan teknologi terbaru.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔭</div>
+                <h3>Astronomi</h3>
+                <p>Membahas fenomena langit, bintang, planet, dan luar angkasa.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>AI & Masa Depan</h3>
+                <p>Diskusi seputar AI, machine learning, dan etika teknologi.</p>
+            </div>
+        </section>
+
+        <!-- Stats Modern -->
+        <section class="stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="7">7</div>
+                <div class="stat-label">Divisi Aktif</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="8">8</div>
+                <div class="stat-label">Admin Komunitas</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="180+">180+</div>
+                <div class="stat-label">Anggota Aktif</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="24">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </section>
+
+        <!-- GAME ZONE SECTION -->
+        <section class="game-zone">
+            <h2><i>🎮</i> Game Zone — Main Yuk!</h2>
+            <div class="game-grid">
+                <!-- Game 1: Tebak Angka -->
+                <div class="game-card">
+                    <div class="game-emoji">🔢</div>
+                    <h3>Tebak Angka</h3>
+                    <p>Komputer memilih angka 1-100. Tebak dalam 7 kesempatan!</p>
+                    <button class="game-btn" onclick="openGame('tebakAngka')"> <span>🎲</span> Main Sekarang</button>
+                </div>
+                <!-- Game 2: Suit Jepang -->
+                <div class="game-card">
+                    <div class="game-emoji">✂️📄🗿</div>
+                    <h3>Gunting Batu Kertas</h3>
+                    <p>Adu suit melawan komputer, best of 5.</p>
+                    <button class="game-btn" onclick="openGame('suit')"> <span>🆚</span> Main Sekarang</button>
+                </div>
+                <!-- Game 3: Dadu Online -->
+                <div class="game-card">
+                    <div class="game-emoji">🎲</div>
+                    <h3>Lempar Dadu</h3>
+                    <p>Klik untuk melempar dadu 6 sisi. Lihat keberuntunganmu!</p>
+                    <button class="game-btn" onclick="openGame('dadu')"> <span>🎲</span> Main Sekarang</button>
+                </div>
+                <!-- Game 4: Kuis Pengetahuan -->
+                <div class="game-card">
+                    <div class="game-emoji">❓</div>
+                    <h3>Kuis IT & Astronomi</h3>
+                    <p>Uji wawasanmu seputar teknologi dan luar angkasa.</p>
+                    <button class="game-btn" onclick="openGame('quiz')"> <span>🧠</span> Main Sekarang</button>
+                </div>
+                <!-- Game 5: Tebak Warna -->
+                <div class="game-card">
+                    <div class="game-emoji">🎨</div>
+                    <h3>Tebak Warna RGB</h3>
+                    <p>Tebak warna dari kode RGB yang diberikan.</p>
+                    <button class="game-btn" onclick="openGame('warna')"> <span>🌈</span> Main Sekarang</button>
+                </div>
+                <!-- Game 6: Generator Angka Acak -->
+                <div class="game-card">
+                    <div class="game-emoji">⚡</div>
+                    <h3>Random Number</h3>
+                    <p>Hasilkan angka acak antara 1 - 1000. Tekan tombol!</p>
+                    <button class="game-btn" onclick="openGame('random')"> <span>🎰</span> Main Sekarang</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Members -->
+        <section class="members">
+            <h2><i>✨</i> Active Admin Team</h2>
+            <div class="member-grid">
+                <div class="member-card">
+                    <div class="member-avatar">R</div>
+                    <div class="member-info">
+                        <h4>RFF_707</h4>
+                        <p>Developer website <span class="status-dot"></span></p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">K</div>
+                    <div class="member-info">
+                        <h4>kaliky</h4>
+                        <p>intelektual<span class="status-dot"></span></p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">∀</div>
+                    <div class="member-info">
+                        <h4>∀xK(x)⊢∃M</h4>
+                        <p>Cyber Security <span class="status-dot"></span></p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">X</div>
+                    <div class="member-info">
+                        <h4> xXZidanzXx</h4>
+                        <p>Developer game <span class="status-dot"></span></p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">X</div>
+                    <div class="member-info">
+                        <h4>XNXX DEV </h4>
+                        <p>AI Engineer & dev website <span class="status-dot"></span></p>
+                    </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">D</div>
+                    <div class="member-info">
+                        <h4>dik</h4>
+                        <p>Developer website <span class="status-dot"></span></p>
+                    </div>
+                </div>
+                <div class="member-card">
+                  <div class="member-avatar">S</div>
+                  <div class="member-info">
+                      <h4>syfa.strong</h4>
+                      <p>Developer website <span class="status-dot"></span></p>
+                  </div>
+                </div>
+                <div class="member-card">
+                    <div class="member-avatar">M</div>
+                    <div class="member-info">
+                        <h4>milzz</h4>
+                        <p>Astronomi <span class="status-dot"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Tentang</a>
+                    <a href="#">Aturan</a>
+                    <a href="admin-contact">Kontak</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">CTF</a>
+                </div>
+                <div>KomunitasWA v4.0 (with Game Zone)</div>
+            </div>
+            <div class="admin-contact">
+                <p>📢 Laporkan masalah atau ingin jadi kontributor?</p>
+                <p><i>✉️</i> koalisiglobalcentral@gmail.com <i>📞</i> +62 813-4838-5122</p>
+                <p style="font-size:0.85rem; margin-top:10px;">sosmed <a href="https://www.instagram.com/koalisiglobalcentral?igsh=NjF2YTlwamFrZ2c0">Instagram</a> | <a href="https://www.facebook.com/share/1HNwFxmFGz/">Facebook</a> | <a href="https://www.tiktok.com/@komunitaskoalisiglobalce?_r=1&_t=ZS-94SV6x9GWaV">tiktok</a></p>
+            </div>
+            <div class="copyright">
+                © 2025 komunitasKGC - All Rights Reserved. Developed by RFF_707 ❤️
+            </div>
+        </footer>
+    </div>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="game-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeGame()">&times;</span>
+            <div id="gameContent" class="game-area">
+                <!-- konten game dimuat lewat js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript External -->
+    <script src="script.js"></script>
+</body>
+</html>
